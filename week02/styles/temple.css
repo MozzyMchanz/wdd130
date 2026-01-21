@@ -1,0 +1,71 @@
+/* General page styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* Main content wrapper */
+main {
+    max-width: 700px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+}
+
+/* Temple name */
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+/* Temple image */
+img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto 20px auto;
+    box-shadow: 0 4px 30px black;
+}
+
+/* Card sections */
+section {
+    background-color: #e0e0e0;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* Section titles */
+section h2 {
+    margin-top: 0;
+    border-bottom: 1px solid #777;
+    padding-bottom: 5px;
+}
+
+/* Lists */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #9fd3ff;
+    text-align: center;
+    padding: 12px;
+    font-size: 0.9rem;
+}
