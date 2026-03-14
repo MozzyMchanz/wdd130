@@ -22,7 +22,7 @@ img {
 }
 
 p {
-    padding: 10px;
+    padding: 0px;
 
     nav {
         background-color: darkblue;
@@ -39,40 +39,38 @@ p {
         color: darkblue;
     }
 
-    img {
+    main img {
         width: 150px;
         height: auto;
         border: 1px solid black;
         padding: 2px;
         box-shadow: 0 0 30px grey;
     }
+}
 
-    p {
-        padding: 0;
+main {
+    max-width: 830px;
+}
+
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    /* 1️⃣ */
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+
+    aside img {
+        width: 150px;
+        height: auto;
+
     }
+}
 
-    main {
-        max-width: 830px;
-    }
-
-    aside {
-        width: 20rem;
-        margin: 1rem;
-        border: 1px solid rgb(0 0 0 / 0.2);
-        /* 1️⃣ */
-        padding: 1rem;
-        background-color: #eee;
-        color: #333;
-        text-align: center;
-
-        main img {
-            width: 150px;
-            height: auto;
-        }
-    }
-
-    footer {
-        margin-top: 15px;
-        border-top: 1px solid #000;
-        text-align: center;
-    }
+footer {
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
+}
