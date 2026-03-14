@@ -3,7 +3,7 @@ nav {
     padding: 10px;
 }
 
-nav {
+nav a {
     color: white;
     display: block;
     padding: 20px;
@@ -63,7 +63,7 @@ aside {
     text-align: center;
 
     aside img {
-        width: 150px;
+        width: 200px;
         height: auto;
 
     }
