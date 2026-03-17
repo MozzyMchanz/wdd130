@@ -162,6 +162,7 @@ footer p {
     justify-content: center;
     gap: 0.45rem;
     padding-bottom: 0.2rem;
+    text-decoration: none;
 }
 
 .socialmedia img {
