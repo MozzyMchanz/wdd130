@@ -5,6 +5,7 @@
     --text-color: #1a1a1a;
     --bg-color: #eef2ff;
     --card-border: #c8d4f0;
+    --variable--name: var(--bg-color)
 }
 
 * {
