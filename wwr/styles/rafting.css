@@ -24,7 +24,8 @@ body {
 header {
     background: var(--primary-color);
     padding: 0.7rem 1rem;
-    display: flex;
+    display: grid;
+    grid-template-columns: 150px 1fr;
     align-items: center;
     justify-content: space-between;
     gap: 0.6rem;
@@ -39,7 +40,7 @@ header img {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 0.8rem;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
@@ -190,11 +191,12 @@ footer {
 footer p {
     margin-bottom: 0.25rem;
     font-size: 0.9rem;
+
 }
 
 .socialmedia {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     gap: 0.45rem;
     padding-bottom: 0.2rem;
 }
@@ -207,6 +209,7 @@ footer p {
     width: 26px;
     border-radius: 4px;
     border: 1px solid #fff;
+    justify-content: right;
 }
 
 @media (max-width: 860px) {
@@ -234,5 +237,40 @@ footer p {
     .hero::after {
         font-size: 1.3rem;
         top: 8px;
+    }
+
+    .history-grid {
+        display: grid;
+        grid-template-columns: 1fr 300px 1fr;
+        gap: 20px;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .history-grid img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .adventure-gallery {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        margin-top: 1rem;
+    }
+
+    .adventure-gallery figure {
+        width: 20%;
+        text-align: center;
+    }
+
+    .adventure-gallery img {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    figcaption {
+        margin-top: 5px;
+        font-size: 0.9rem;
     }
 }
