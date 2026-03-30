@@ -1,197 +1,124 @@
-:root {
-    --primary-color: #0f2f67;
-    --secondary-color: #1c4c9a;
-    --accent-color: #2e5ab5;
-    --text-color: #1a1a1a;
-    --bg-color: #eef2ff;
-    --card-border: #c8d4f0;
-    --variable--name: var(--bg-color)
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.5;
-    background: var(--bg-color);
-    color: var(--text-color);
-}
-
+/* Header */
 header {
-    background: var(--primary-color);
-    padding: 0.7rem 1rem;
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    align-items: center;
+    display: flex;
     justify-content: space-between;
-    gap: 0.6rem;
+    align-items: center;
+    background: #b9a7d4;
+    padding: 20px;
+    border: 1px solid gray;
 }
 
-header img {
-    width: 120px;
-    border-radius: 6px;
-    border: 2px solid #fff;
+.logo img {
+    width: 100px;
 }
 
 nav ul {
+    display: flex;
     list-style: none;
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
 }
 
-nav a {
-    color: #fff;
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
     text-decoration: none;
-    font-weight: 700;
-    padding: 0.25rem 0.5rem;
-    border-radius: 4px;
+    background: white;
+    padding: 8px 15px;
+    border: 1px solid gray;
+    color: black;
 }
 
-nav a:hover {
-    background: var(--secondary-color);
+/* Company Info */
+.company-info {
+    text-align: center;
+    padding: 20px;
 }
 
-main {
-    max-width: 980px;
-    width: 92%;
-    margin: 0.8rem auto 1rem;
+/* Contact Section */
+.contact-section {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px;
 }
 
-.hero {
-    position: relative;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-bottom: 1rem;
-    border: 2px solid var(--primary-color);
-    min-height: 280px;
+.map img {
+    width: 300px;
 }
 
-.hero img {
-    width: 100%;
+.contact-form {
+    width: 350px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin: 5px 0 15px 0;
+    padding: 8px;
+    border: 1px solid gray;
+}
+
+textarea {
+    height: 80px;
+}
+
+.radio-group {
+    margin-bottom: 15px;
+}
+
+.subscribe {
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px;
+    background: palevioletred;
+    border: 4px solid black;
+    cursor: pointer;
+}
+
+/* Employees Section */
+.employees {
+    background: #eee;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid gray;
+}
+
+.employee-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+
+}
+
+.employee img {
+    width: 120px;
     display: block;
-    min-height: 280px;
-    object-fit: cover;
+    margin: auto;
 }
 
-.hero h1 {
-    position: absolute;
-    top: 12px;
-    left: 12px;
-    right: 12px;
-    color: #fff;
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    z-index: 4;
-    text-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
-}
-
-.hero article {
-    position: absolute;
-    bottom: 12px;
-    left: 12px;
-    right: 12px;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 8px;
-    padding: 0.6rem;
-    z-index: 3;
-    display: flex;
-    gap: 0.6rem;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.hero article img {
-    width: 130px;
-    float: right;
-    margin-left: 0.7rem;
-    border-radius: 6px;
-    object-fit: cover;
-}
-
-.hero::after {
-    content: "Rapids! Make Memories!";
-    position: absolute;
-    top: 5px;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    font-size: 1.6rem;
-    font-weight: 800;
-    color: #fff;
-    background: rgba(18, 38, 96, 0.5);
-    padding: 0.25rem;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    z-index: 2;
-}
-
-h1 {
-    color: #163f95;
-    text-align: center;
-    margin: 0.7rem 0 0.3rem;
-    font-size: 2rem;
-    letter-spacing: 0.02em;
-}
-
-article {
-    display: flex;
-    gap: 1rem;
-    align-items: flex-start;
-    background: #fff;
-    border: 1px solid var(--card-border);
-    border-radius: 12px;
-    padding: 0.9rem;
-    margin-bottom: 1rem;
-}
-
-article img {
-    width: 180px;
-    border-radius: 8px;
-    object-fit: cover;
-}
-
-article p {
-    color: #212121;
-    font-size: 0.95rem;
-    line-height: 1.65;
-}
-
-section {
-    background: #fff;
-    border-left: 6px solid var(--primary-color);
-    padding: 0.7rem 0.9rem;
-    border-radius: 8px;
-    margin-bottom: 0.9rem;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.06);
-}
-
-section h2 {
-    color: #0a2a71;
-    margin-bottom: 0.3rem;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    font-size: 1.2rem;
-}
-
+/* Footer */
 footer {
-    background: var(--primary-color);
-    color: #fff;
-    text-align: center;
-    padding: 0.7rem 0.6rem;
-    margin-top: 0.8rem;
-    border-top: 4px solid var(--accent-color);
-}
-
-footer p {
-    margin-bottom: 0.25rem;
-    font-size: 0.9rem;
-
+    background: #b9a7d4;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid gray;
 }
 
 .socialmedia {
@@ -211,67 +138,4 @@ footer p {
     border: 1px solid #fff;
     justify-content: right;
 }
-
-@media (max-width: 860px) {
-    header {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    article {
-        flex-direction: column;
-    }
-
-    .hero article {
-        position: static;
-        width: 100%;
-        background: rgba(255, 255, 255, 0.95);
-    }
-
-    .hero article img {
-        float: none;
-        width: 100%;
-        margin: 0 0 0.6rem;
-    }
-
-    .hero::after {
-        font-size: 1.3rem;
-        top: 8px;
-    }
-
-    .history-grid {
-        display: grid;
-        grid-template-columns: 1fr 300px 1fr;
-        gap: 20px;
-        align-items: center;
-        margin-top: 1rem;
-    }
-
-    .history-grid img {
-        width: 100%;
-        border-radius: 10px;
-    }
-
-    .adventure-gallery {
-        display: flex;
-        justify-content: space-between;
-        gap: 15px;
-        margin-top: 1rem;
-    }
-
-    .adventure-gallery figure {
-        width: 20%;
-        text-align: center;
-    }
-
-    .adventure-gallery img {
-        width: 100%;
-        border-radius: 8px;
-    }
-
-    figcaption {
-        margin-top: 5px;
-        font-size: 0.9rem;
-
-    }
 }
